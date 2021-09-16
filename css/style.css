@@ -374,6 +374,7 @@ template {
 }
 
 .header__search {
+  margin-right: auto;
   margin-left: 108px;
 }
 
