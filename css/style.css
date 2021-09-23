@@ -516,10 +516,36 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
+    width: 97%;
+  }
+  .search__input {
+    width: 250px;
+  }
+  .navbar-top {
+    padding: 30px 0;
+  }
+  .navbar__user .username {
+    margin-left: 10px;
+  }
+  .navbar-menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 480px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
+  }
+  .navbar-top {
+    -webkit-box-pack: flex-between;
+        -ms-flex-pack: flex-between;
+            justify-content: flex-between;
   }
   .menu-button {
     display: -webkit-box;
@@ -527,7 +553,7 @@ template {
     display: flex;
     width: 16px;
     height: 11px;
-    padding: 0 9px;
+    padding: 0 5px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -549,16 +575,21 @@ template {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 320px) {
   .container {
-    max-width: 280px;
-    width: 92%;
+    width: 280px;
   }
   .logo {
     width: 99px;
   }
   .navbar-top {
     padding: 24px 0;
+  }
+}
+
+@media (max-width: 285px) {
+  .container {
+    width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
