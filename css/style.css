@@ -640,26 +640,19 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 700px;
     width: 97%;
-  }
-  .search__input {
-    width: 250px;
   }
   .navbar-top {
     padding: 30px 0;
   }
-  .navbar__user .username {
-    margin-left: 10px;
-  }
   .navbar-menu {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 660px) {
   .container {
     max-width: 480px;
     width: 92%;
