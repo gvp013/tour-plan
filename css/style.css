@@ -569,7 +569,7 @@ template {
           justify-content: space-between;
 }
 
-.hotel-right {
+.hotel-parameters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,7 +625,7 @@ template {
 
 .swiper {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
 }
@@ -644,10 +644,14 @@ template {
   z-index: 10;
 }
 
-.slider {
+.swiper-slide__image {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -806,12 +810,20 @@ template {
   width: 347px;
   height: 213px;
   background-color: #dfddd7;
-  border-radius: 4px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .container .slider {
+    width: 590px;
+  }
+  .container .swiper-slide__image {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -852,6 +864,31 @@ template {
   .hotel-info__description {
     margin: 0;
   }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin: 0 0 30px 0;
+  }
+  .hotel-parameters {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+    padding: 29px 22px 26px 23px;
+  }
+  .slider {
+    width: 100% !important;
+  }
+  .map {
+    width: 340px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -865,6 +902,22 @@ template {
   .navbar-menu {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .slider {
+    height: 350px;
+  }
+  .hotel-parameters {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
   }
 }
 
@@ -964,6 +1017,21 @@ template {
   }
   .stars {
     margin-right: 15px;
+  }
+  .slider {
+    height: 178px;
+  }
+  .hotel-info {
+    padding: 0 0 38px 0;
+  }
+  .hotel__slider {
+    margin: 0 0 20px 0;
+  }
+  .hotel-parameters {
+    min-height: 410px;
+  }
+  .map {
+    height: 178px;
   }
 }
 
