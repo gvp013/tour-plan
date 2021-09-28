@@ -623,6 +623,8 @@ template {
 }
 
 .slider {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 728px;
 }
 
