@@ -23,6 +23,13 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 .stars
   display: flex
   flex-basis: 100%
@@ -49,6 +56,7 @@
     font-size: 14px
     line-height: 18px
     font-weight: 700
+
 .swiper
   width: 100%
   height: 450px
@@ -87,3 +95,79 @@
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+.booking
+  font-family: 'Nunito', sans-serif
+  background-color: $dark
+  color: $light
+  border-radius: 8px
+  width: 350px
+  height: 210px
+  padding: 29px 29px 26px 26px
+  &__info
+    display: flex
+    justify-content: space-between
+    margin: 0 0 12px 0
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-style: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-style: normal
+    font-size: 12px
+    line-height: 9px
+  &__room
+    padding: 4px 0 0
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 8px 0
+    font-style: normal
+    font-size: 12px
+    line-height: 16px
+  &__description
+    margin-left: 9px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 17px 0
+  &__heading
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: inherit
+    text-decoration: none
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__num
+    margin: 0 0 0 8px
+  &__button
+    width: 100%
+    min-height: 45px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+    background-color: $primary
+    color: $light
+    border: none
+    cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  background-color: #dfddd7
+  border-radius: 4px
