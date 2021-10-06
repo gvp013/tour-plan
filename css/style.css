@@ -1221,6 +1221,12 @@ template {
             order: -1;
     margin-left: 0;
   }
+<<<<<<< HEAD
+=======
+  .slider {
+    height: 350px;
+  }
+>>>>>>> 6a446f6099c347ad8f18be3c67f5644aac4f764d
   .hotel-parameters {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1234,6 +1240,7 @@ template {
   .map {
     width: 100%;
   }
+<<<<<<< HEAD
   .newsletter-wrapper {
     max-width: 576px;
     width: 576px;
@@ -1245,6 +1252,8 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+=======
+>>>>>>> 6a446f6099c347ad8f18be3c67f5644aac4f764d
 }
 
 @media (max-width: 320px) {
