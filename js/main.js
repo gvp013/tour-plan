@@ -12,7 +12,6 @@ var hotelSlider = new Swiper(".hotel-slider", {
     enabled: true,
     onlyInViewport: false,
   },
-<<<<<<< HEAD
 
   effect: 'coverflow',
 });
@@ -26,8 +25,6 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     nextEl: ".reviews-slider__button--next",
     prevEl: ".reviews-slider__button--prev",
   },
-=======
->>>>>>> 6a446f6099c347ad8f18be3c67f5644aac4f764d
 });
 
 ymaps.ready(init);
