@@ -1039,6 +1039,94 @@ template {
   text-align: justify;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+}
+
+.activities__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0 0 57px 0;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 26px;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__title {
+  margin-top: auto;
+  color: #ffffff;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 7px 21px;
+  background: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1049,6 +1137,10 @@ template {
   .hotel-slider__image {
     width: 100%;
     height: 100%;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1114,9 +1206,6 @@ template {
   .map {
     width: 340px;
   }
-  .newsletter {
-    padding: 72px 0 73px;
-  }
   .reviews-slider__button {
     top: 50%;
   }
@@ -1127,12 +1216,45 @@ template {
     right: 0;
   }
   .reviews-slider__item {
-    max-width: 650px;
+    max-width: 580px;
+    padding: 0 63px 18px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__rating {
+    padding: 0px 0px 0px 5px;
   }
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
     margin: 0px 0 49px 0;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 30px;
+  }
+  .card {
+    width: 48.5%;
+    height: 255px;
+  }
+  .card__title {
+    width: 200px;
+  }
+  .newsletter {
+    padding: 0;
+  }
+  .parallax-window {
+    padding: 71px 0 73px;
+  }
+  .activities {
+    padding: 48px 0 98px 0;
+  }
+  .activities__card {
+    margin-bottom: 20px;
   }
 }
 
@@ -1147,6 +1269,9 @@ template {
   .navbar-menu {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .activities {
+    padding: 50px 0 30px 0;
   }
 }
 
@@ -1250,14 +1375,41 @@ template {
   .subscribe__input {
     padding: 0 90px 0 19px;
   }
+  .reviews__title {
+    font-size: 26px;
+  }
   .reviews-slider__item {
     padding: 0 35px 18px;
+  }
+  .card {
+    width: 48%;
+    height: 255px;
+  }
+  .card__title {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews__title {
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0px 0 42px 0;
+  }
+  .activities-card__title {
+    width: 70%;
+  }
+  .activities .card {
+    width: 100%;
   }
 }
 
 @media (max-width: 320px) {
-  .container, .newsletter-wrapper {
+  .container {
     width: 280px;
+  }
+  .newsletter-wrapper {
+    width: 320px;
   }
   .logo {
     width: 99px;
@@ -1298,8 +1450,11 @@ template {
   .map {
     height: 178px;
   }
-  .newsletter {
+  .parallax-window {
     padding: 60px 0 83px;
+  }
+  .newsletter {
+    padding: 0;
   }
   .newsletter-title {
     font-size: 20px;
@@ -1319,14 +1474,10 @@ template {
   }
   .reviews__title {
     font-size: 18px;
-    line-height: 23px;
-    margin: 0px 0 42px 0;
+    padding: 0 15px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
-  }
-  .reviews-slider__item::after, .reviews-slider__item::before {
-    display: none;
   }
   .reviews-slider__button {
     top: 31px;
@@ -1345,6 +1496,26 @@ template {
   }
   .reviews-slider__text {
     text-align: left;
+  }
+  .activities {
+    padding: 14px 0 30px 0;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 36px 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-secondary {
+    margin-top: 8px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .card:last-of-type {
+    margin-top: 0;
   }
 }
 
