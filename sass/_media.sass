@@ -53,7 +53,9 @@
   .map
     width: 340px
   .newsletter
-    padding: 72px 0 73px
+    padding: 0
+  .parallax-window
+    padding: 72px 0 72px
   .reviews
     &-slider
       &__button
@@ -63,7 +65,12 @@
         &--next
           right: 0
       &__item
-        max-width: 650px
+        max-width: 580px
+        padding: 0 63px 18px
+        &::after, &::before
+          display: none
+      &__rating
+        padding: 0px 0px 0px 5px
     &__title
       font-size: 30px
       line-height: 38px
@@ -132,7 +139,7 @@
     width: 100%
   .newsletter
     &-wrapper
-      max-width: 100%
+      max-width: 520px
       padding: 0 20px 0 20px
       flex-direction: column
       align-items: flex-start
@@ -141,13 +148,24 @@
     &__input
       padding: 0 90px 0 19px
   .reviews
+    &__title
+      font-size: 26px
     &-slider
       &__item
         padding: 0 35px 18px
 
+@media (max-width: 480px)
+  .reviews
+    &__title
+      font-size: 20px
+      line-height: 23px
+      margin: 0px 0 42px 0
+
 @media (max-width: 320px)
-  .container, .newsletter-wrapper
+  .container
     width: 280px
+  .newsletter-wrapper
+    width: 320px
   .logo
     width: 99px
   .navbar
@@ -176,8 +194,10 @@
     margin-right: 15px
   .map
     height: 178px
-  .newsletter
+  .parallax-window
     padding: 60px 0 83px
+  .newsletter
+    padding: 0
     &-title
       font-size: 20px
       line-height: 25px
@@ -193,13 +213,10 @@
   .reviews
     &__title
       font-size: 18px
-      line-height: 23px
-      margin: 0px 0 42px 0
+      padding: 0 15px
     &-slider
       &__item
         padding: 0 30px 30px
-        &::after, &::before
-          display: none
       &__button
         top: 31px
         &--prev
