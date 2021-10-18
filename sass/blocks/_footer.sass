@@ -1,0 +1,134 @@
+.footer
+  background-color: $dark
+  color: $light
+  padding: 108px 46px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    // grid-template-columns: 264px 268px 261px 259px
+    grid-gap: 19px
+    grid-auto-rows: minmax(40px, min-content)
+    align-items: start
+    margin-bottom: 100px
+  &__logo
+    width: 154px
+    grid-row: 1 / 3
+    align-self: stretch
+  &__categories
+    grid-row: 1 / 4
+    &--ml
+      margin-left: 3px
+  &__additional
+    &--ml
+      margin-left: 6px
+  &__social
+    &-links
+      display: flex
+      align-items: flex-end
+      min-width: 83px
+      justify-content: space-between
+    &-network
+      display: flex
+      align-items: end
+      grid-row: 2 / 4
+      grid-column: span 2
+  &__legal
+    margin-left: 68px
+  &__contact
+    &-details
+      grid-column: span 2
+      &--mt
+        margin-top: 14px
+    &-form
+      grid-column: span 2
+      &--ml
+        margin-left: 6px
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin: 0 0 18px 0
+    text-transform: uppercase
+    &--inline
+      margin: 3px 43px 0px 6px
+    &-margin
+      margin-bottom: 28px
+    &--form
+      margin-bottom: 36px
+  &__item
+    display: flex
+    align-items: start
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: $footer-text-color
+    &--margin
+      margin-bottom: 19px
+    &-wrapper
+      display: flex
+  &__icon
+    margin-right: 8px
+    &-wrapper
+      margin: 7px 15px 0px 5px
+      width: 21px
+      height: 21px
+  &__text
+    color: $footer-text-color
+    margin-bottom: 22px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+  &__link
+    text-decoration: none
+    color: inherit
+  &__input
+    width: 100%
+    background-color: #FFFFFF
+    border-radius: 4px
+    border: none
+    padding: 0 89px 0 24px
+    height: 50px
+    margin-bottom: 15px
+    flex-basis: 48%
+    font-size: 12px
+    color: #BDBDBD
+  &__message
+    background-color: #FFFFFF
+    border-radius: 4px
+    padding: 18px 23px
+    resize: none
+    border: none
+    flex-basis: 100%
+    height: 123px
+    margin-bottom: 23px
+    font-size: 12px
+    color: #BDBDBD
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    background-color: $primary
+    border: none
+    border-radius: 4px
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
